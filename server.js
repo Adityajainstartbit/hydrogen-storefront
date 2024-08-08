@@ -58,10 +58,7 @@ export default {
       /**
        * Create a client for Customer Account API.
        */
-      const { createRequestHandler } = require('@remix-run/vercel');
-      module.exports = createRequestHandler({
-        build: require('./build'),
-      });
+      
       const customerAccount = createCustomerAccountClient({
         waitUntil,
         request,
